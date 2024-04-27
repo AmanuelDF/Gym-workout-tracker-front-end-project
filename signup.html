@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="styles/signup.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto+Mono:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/signup.js"></script>
+  </head>
+  <body>
+    <div class="home">
+      <a href="flexhome.html"
+        ><img
+          class="logo_img"
+          src="flex-low-resolution-logo-color-on-transparent-background.png"
+          alt="home"
+      /></a>
+    </div>
+    <div class="sign_up">
+      <div id="title">Sign Up</div>
+      <div id="error"></div>
+      <div class="form">
+        <form action="info.html" onsubmit="return addUser()">
+          <div class="form_item">
+            <label for="name">Name: </label>
+            <input
+              type="text"
+              name="FirstName"
+              id="fname"
+              class="name"
+              placeholder="First Name"
+              required
+            />
+            <input
+              type="text"
+              name="LastName"
+              id="lname"
+              class="name"
+              placeholder="Last Name"
+              required;
+            />
+          </div>
+          <br />
+          <div class="form_item">
+            <label for="email">Email: </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="abc@xyz"
+              required
+            />
+          </div>
+          <br />
+          <div class="form_item">
+            <label for="pword">Password: </label>
+            <input type="password" id="pword" name="pword" required />
+          </div>
+          <br />
+          <div class="form_item">
+            <label for="cpword">Confirm Password: </label>
+            <input type="password" id="cpword" name="cpword" required />
+          </div>
+          <center>
+            <button type="submit" id="signup">sign up</button>
+          </center>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

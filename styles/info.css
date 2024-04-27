@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(30, 30, 30);
+    padding-bottom: 50px;
+}
+.logo_img{
+    width: 50px;
+    margin-top:20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.infotype{
+    margin-left: 300px;
+}
+#title{
+    color: white;
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-family: Quicksand,Arial;
+}
+.infotype{
+    color: white;
+    font-size: 28px;
+    padding-top: 30px;
+    font-family: Quicksand,arial;
+}
+#age{
+    width: 70px;
+    padding: 10px 8px;
+    background-color:rgb(64, 64, 64);
+    font-size: 17px;
+    color:white;
+    border: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    border-color: rgb(0, 94, 255);
+
+}
+#intensity{
+    width: 150px;
+    padding: 10px 8px;
+    background-color:rgb(64, 64, 64);
+    font-size: 17px;
+    color:white;
+    border: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    border-color: rgb(0, 94, 255);
+
+}
+#weight{
+    width: 70px;
+    padding: 10px 8px;
+    background-color:rgb(64, 64, 64);
+    font-size: 17px;
+    color:white;
+    border: solid;
+    border-width: 1px;
+    border-radius: 6px;
+    border-color: rgb(0, 94, 255);
+
+}
+#start{
+    margin-top: 50px;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 6px;
+    background-color: rgb(30, 30, 30);
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(0, 94, 255);
+    color: white;
+    transition: background-color 0.25s, color 0.25s; 
+}
+#start:hover{
+    background-color: white;
+    border: none;
+    color: black;
+}
+.radio{
+    width: 10px;
+}

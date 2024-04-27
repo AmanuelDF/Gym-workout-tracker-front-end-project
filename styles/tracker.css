@@ -1,0 +1,94 @@
+*{
+    font-size: Quicksand,arial;
+    color: white;
+    font-size: 20px;
+}
+body{
+    background-color: rgb(30, 30, 30);
+}
+.logo_img{
+    width: 50px;
+    margin-top:20px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 60px;
+}
+.title{
+    font-size: 30px;
+    font-family: Roboto Mono,Arial;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#recommend{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: Roboto Mono,Arial;
+    font-size: 20px;
+}
+.exercises{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 30px;
+}
+
+.img_div{
+    
+    position: relative;
+    height: 450px;
+}
+
+.eximg{
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    height:inherit;
+    object-fit: cover;
+}
+.eximg:hover {
+    transform: scale(107%);
+    box-shadow: 0 0 10px rgb(0,0,0);
+
+}
+
+
+.name{
+    border: none;
+    background: none;
+    font-family: Quicksand;
+    font-size: 40px;
+    position: absolute;
+    z-index: 2;
+    bottom: 10px;
+    left: 10px;
+}
+.name:hover {
+    opacity: 0;
+    padding: 20px;
+}
+.desc {
+    padding-top: 50px;
+    font-family: Roboto Mono,Arial;
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    background-color: rgba(0,0, 0,0.7);
+    top: 25%;
+    width: 100%;
+    bottom: 0;
+    opacity: 0;
+    z-index: 3;
+    transition: opacity 0.2s;
+}
+.desc:hover{
+    opacity: 1;
+}

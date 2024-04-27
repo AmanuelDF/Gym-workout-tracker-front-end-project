@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal info</title>
+    <link rel="stylesheet" href="styles/info.css">
+  </head>
+  <body>
+    <div class="home">
+      <a href="flexhome.html"
+        ><img
+          class="logo_img"
+          src="flex-low-resolution-logo-color-on-transparent-background.png"
+          alt="home"
+      /></a>
+    </div>
+    <div class="info">
+      <div id="title"><center>
+        Tell us more about yourself so we can prepare a suitable workout plan
+        for you</center>
+      </div>
+      <div class="data_form">
+        <form action="Tracker.html">
+            <div class="infotype"><label for="age">Age: </label>
+                <input type="number" id="age" max="89" min="12"></div>
+        </div>
+        <div class="infotype">
+            <label for="gender" id="gender">Gender:</label>
+            <input type="radio" id="male" name="gender">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender">
+            <label for="female">Female</label>
+           
+        </div>
+        <div class="infotype">
+            <label for="weight">Weight (in kg): </label>
+            <input type="number" id="weight" max="400" min="25">
+        </div>
+        <div class="infotype">
+            <label for="activity">have you ever experienced cardio vascular disease before: </label>
+            <input type="radio" name="activity" id="yes" class="radio" required>
+            <label for="yes">Yes</label>
+            <input type="radio" name="activity" id="no">
+            <label for="no">No</label>
+        </div>
+        <div class="infotype">
+            <label for="intensity">choose training intensity: </label>
+            <select name="intensity" id="intensity">
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="pro">Pro</option>
+            </select>
+        </div>
+        <div >
+           <center> <button type="submit" id="start">start</button></center>
+        </div>
+        
+        
+    </form>
+      <script src="scripts/info.js"></script>
+    </div>
+  </body>
+</html>
